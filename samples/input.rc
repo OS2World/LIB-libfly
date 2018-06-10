@@ -1,0 +1,9 @@
+#include <fly.h>
+
+MENU FLY_APP_FRAMEWND
+BEGIN
+   SUBMENU "~File", 1000
+   BEGIN
+      MENUITEM "E~xit...",                 14
+   END
+END

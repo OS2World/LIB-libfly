@@ -1,0 +1,91 @@
+;
+; Exported variables
+;
+fl_clr             @1 RESIDENTNAME
+fl_opt             @2 RESIDENTNAME
+fl_str             @3 RESIDENTNAME
+fl_sym             @4 RESIDENTNAME
+;
+; Low-level stuff I. Screen I/O
+;
+video_init         @10
+video_terminate    @11
+video_update       @12
+;
+video_put          @13
+video_put_n_attr   @14
+video_put_n_cell   @15
+video_put_n_char   @16
+video_put_str      @17
+video_put_str_attr @18
+video_save         @19
+video_restore      @20
+video_clear        @21
+;
+video_get_cursor   @22
+video_set_cursor   @23
+video_get_window_pos   @24
+video_set_window_pos   @25
+video_set_window_size  @26
+video_hsize        @27
+video_vsize        @28
+video_cursor_state @29
+;
+; Low-level stuff II. Keyboard/Mouse
+;
+getmessage         @40
+getkey             @41
+fly_keyname        @42
+fly_keyname2       @43
+fly_keyvalue       @44
+fly_mouse          @45
+;
+; Low-level stuff III. Menu bar
+;
+menu_activate      @100
+menu_deactivate    @101
+menu_chstatus      @102
+menu_enable        @103
+menu_disable       @104
+menu_load          @105
+menu_unload        @106
+menu_check_key     @107
+menu_process_line  @108
+menu_set_switch    @109
+;
+; Low-level stuff IV. Miscellaneous
+;
+fly_initialize     @200
+fly_init           @201
+fly_terminate      @202
+fly_error          @203
+fly_usemono        @204
+fly_launch         @205
+beep2              @206
+fly_process_args   @207
+;
+query_drive        @300
+query_drivemap     @301
+change_drive       @302
+;
+get_clipboard      @400
+put_clipboard      @401
+;
+fly_get_fontlist   @500
+fly_get_font       @501
+fly_set_font       @502
+;
+get_window_name    @600
+set_window_name    @601
+set_icon           @602
+;
+fly_scroll_it      @700
+;
+; UI Widgets
+;
+fly_ask            @1000
+fly_ask_ok         @1001
+fly_choose         @1002
+fly_drawframe      @1003
+fly_shadow         @1004
+

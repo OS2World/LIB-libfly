@@ -1,0 +1,10 @@
+
+LIBRARY fly_pm INITINSTANCE
+DESCRIPTION 'libfly 0.1 (C) Moscow State University'
+
+DATA
+   MULTIPLE NONSHARED
+
+EXPORTS
+
+FlyWndProc

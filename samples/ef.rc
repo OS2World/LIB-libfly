@@ -1,0 +1,5 @@
+#include <fly.h>
+
+MENU FLY_APP_FRAMEWND
+BEGIN
+END

@@ -1,0 +1,37 @@
+
+Some questions you might have (with answers):
+---------------------------------------------
+
+1. Why another editor? Woods are thick of editors!
+A: I wrote it because 
+   a) I wanted built-in editor for NFTP (this idea was abandoned though); 
+   b) I wanted programming example for FLY library; 
+   c) I wanted true cross-platform lighweight and easy-to-use editor; 
+   d) I wanted editor which will run remotely even via poorest terminal 
+      emulators (usually broken quasi-ANSI PC telnet emulators).
+
+2. Is ef powerful?
+A: No. And it is not intended to be powerful. Goal was to make simple,
+fast and compatible editor. If you want to make it powerful, go ahead:
+pick the source, rename the project and add everything you need!
+
+3. I thought vi and joe are crossplatform and run with all terminal emulators!
+A: They are mostly crossplatform, but I am not vi fan. Both fail with
+some terminal emulators (TN by Maloff comes to mind) while ef doesn't.
+
+4. Is ef free? Can I use it or its pieces in my code?
+A: Yes and yes. See FLY license.
+
+5. Why vi and joe fail where ef succeeds?
+A: Because FLY uses less optimizations (in particular, no scrolling). 
+This results in poorer preformance, but gives better compatibility.
+
+6. Why it is called `ef'?
+A: Initially I wanted to call it 'fe' (FLY editor), but there appeared
+to be editor under this name.
+
+7. Does ef have some editing features not found in other editors?
+A: Hardly.
+
+This text was typed in ef!
+

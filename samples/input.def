@@ -1,0 +1,10 @@
+;----------------------------------
+; MOUTEST.DEF module definition file
+;----------------------------------
+   
+NAME           Moutest     WINDOWAPI
+   
+DESCRIPTION    'Moutest/PM, Copyright (C) 1998 Sergey Ayukov'
+;HEAPSIZE       1024
+;STACKSIZE      32768
+;EXPORTS        FlyWndProc

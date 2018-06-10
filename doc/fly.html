@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>FLY user interface library</title>
+</head>
+<body>
+
+<h1>FLY user interface library</h1>
+
+<tt>
+Copyright (C) 1997-1999 Sergey Ayukov<br>
+Version 0.1, January 1999<br>
+See file LICENSE to find out about licensing terms and conditions
+</tt>
+<hr>
+
+<h2>1. Prerequisites</h2>
+
+You have to have the following software installed to compile FLY and
+its samples out of the box:
+
+<h2>C compiler and GNU tools</h2>
+
+Right now, FLY is gcc-oriented, and it's written
+in the makefiles. Therefore get and install GNU C compiler.
+Note: C++ is not needed to compile FLY. Platform details:
+
+<table border=1 width="100%" cellpadding=8>
+
+<tr><th> Platform
+<th> Where to get compiler/tools
+
+<tr><td> OS/2
+<td> download emx/gcc and GNU tools. You'll need things from<br>
+<tt>ftp://ftp.leo.org/pub/comp/os/os2/leo/gnu/emx+gcc</tt><br>
+and<br>
+<tt>ftp://ftp.leo.org/pub/comp/os/os2/leo/gnu/devtools/gnumake.zip</tt>,<br>
+<tt>ftp://ftp.leo.org/pub/comp/os/os2/leo/gnu/systools/gnufutil.zip</tt>,<br>
+<tt>ftp://ftp.leo.org/pub/comp/os/os2/leo/gnu/systools/gnusutil.zip</tt>,<br>
+<tt>ftp://ftp.leo.org/pub/comp/os/os2/leo/gnu/systools/gnututil.zip</tt>.<br>
+Other things from<br>
+<tt>ftp://ftp.leo.org/pub/comp/os/os2/leo/gnu</tt><br>
+are also very useful.
+<br>This platform is automatically recognized by FLY makefile.
+Targets are <tt>os2vio</tt> (text windows and fullscreen),
+<tt>os2pm</tt> (textmode on top of OS/2 GUI), <tt>os2x</tt> (runs
+under XFree86/OS2, in xterm).
+
+<tr><td> Linux Intel
+<td> gcc and libraries come with the OS.
+<br>This platform is automatically recognized by FLY makefile.
+Target is <tt>unixterm</tt>.
+
+<tr><td> FreeBSD
+<td> gcc and libraries come with the OS.
+<br>This platform is automatically recognized by FLY makefile.
+Target is <tt>unixterm</tt>.
+
+<tr><td> Solaris Sparc, Intel
+<td> gcc 2.8.1 and precompiled GNU tools can be downloaded from
+sunfreeware.com (my development happens on Sparc 2.5.1, Intel Solaris 7).
+You'll need at least compiler (gcc-2.8.1) and make packages. Bash is
+recommended if you want to live comfortably :-) I have not tried
+SunSoft compiler. Also install termcap-1.3 from any GNU mirror; without
+it, FLY won't compile (Solaris does not have termcap.h).
+<br>This platform is automatically recognized by FLY makefile.
+Target is <tt>unixterm</tt>.
+
+<tr><td> BeOS R4 Intel
+<td> all tools including GNU <tt>make</tt> and egcs come with the OS.
+<br>This platform is automatically recognized by FLY makefile. Target
+is <tt>beosterm</tt>.
+
+<tr><td> BeOS R3 Intel
+<td> all tools are available from GeekGadgets
+(<tt>ftp.ninemoons.com:/pub/geekgadgets</tt>).
+Since this version is discontinued by Be, Inc. and is incompatible with R4,
+it is expected to be excluded from the list of supported by FLY during first
+half of 1999. You'll need at least egcs and binutils packages.
+<br>This platform is automatically recognized by FLY makefile. Target
+is <tt>beosterm</tt>.
+
+<tr><td> Windows 95/98/NT
+<td> get and install RSXNT package from
+<a href="http://www.mathematik.uni-bielefeld.de/~rainer">http://www.mathematik.uni-bielefeld.de/~rainer</a>.
+You'll also need <a href="http://www.microsoft.com/msdownload/platformsdk.htm">Microsoft Platform SDK</a>
+as advised in RSXNT docs and GNU tools (<tt>make</tt>, <tt>rm</tt> etc.)
+from Cygnus (<tt>ftp://ftp.cygnus.com/pub/gnu-win32</tt>).
+Note that RSXNT requires a license to built commercial/shareware applications.
+I have not tried gcc from Cygnus.
+<br>Under '95 and '98, you'll have to 
+<tt>SET OS=windows</tt> in <tt>autoexec.bat</tt> to be recognized by FLY
+makefile. Target is <tt>win32cons</tt>.
+
+</table>
+
+</body>
+</html>
+
